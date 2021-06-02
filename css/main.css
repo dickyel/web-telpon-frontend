@@ -1,0 +1,445 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #000000;
+}
+nav{
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-brand img {
+    max-height: 70px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    padding: 14px 16px;
+}
+
+.navbar-telpon{
+    
+    border-bottom: 0.5px solid #D8CCCC;
+}
+
+
+.btn-daftar {
+    background-color: #0B9EA4;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 122px;
+    height: 58px;
+}
+
+.btn-daftar:hover {
+    background-color: #63E8ED;
+    color: #fff;
+}
+
+.section-menu-telpon {
+    
+    margin-top: 50px;
+    margin-bottom: 140px;
+    
+    display: flex;
+}
+
+.section-menu-telpon h3{
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.section-menu-telpon p{
+    color: #6C5656;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+  
+.section-menu-image img {
+    width: 448px;
+    height: 300px;
+    margin-top: 50px;
+    
+    margin-left: 90px;
+}
+
+.teks-slide p{
+  font-size: 24px;
+  font-weight: bold;
+  color: #0B9EA4;
+  margin-left: 20px;
+}
+
+.section-menu-telpon .btn-mulai-rapat{
+    background-color: #0B9EA4;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 156px;
+    height: 40px;
+    justify-content: center;
+}
+
+footer{
+
+    background-color: #231717;
+    
+}
+.section-footer .text-footer-heading{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.fa-map-marker-alt{
+    width: 50px;
+    height: 50px;
+}
+
+.telpon-address{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.gambar-telpon-address{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 18px;
+}
+
+.navigasi{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-help{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sosmed img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.download img{
+  width: 340px;
+  height: 110px;
+  margin-bottom: 16px;
+}
+
+.made-with{
+    
+    color: #fff;
+    font-size: 18px;
+}
+
+.modal-body{
+  margin-top: -3px;
+
+}
+.login-register{
+  margin-top: -20px;
+}
+
+.image-copy{
+  max-width: 14px;
+  max-height: 14px;
+}
+
+
+
+.form-copy p{
+  margin-top: -3px;
+  font-size: 15px;
+}
+
+
+/* modal pop up */
+@media (min-width: 576px) {
+    .modal-login-register {
+      max-width: 500px;
+      max-height: 600px;
+      
+    }
+    
+    .modal-rapat{
+      width: 260px;
+      height: 100px;
+      position: relative;
+      top: 16%;
+      right: 31%;
+      
+      
+    }
+    .modal-dialog .modal-content {
+      padding: 1rem;
+    }
+
+    .modal-link-rapat{
+      width: 400px;
+      height: 400px;
+      
+    }
+
+    .modal-dialog .modal-rapat{
+      
+      padding: 1rem;
+    }
+
+    
+  }
+  .modal-header {
+   margin-top: -3px; 
+  }
+  
+  .btn-round {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .rapat-anda{
+    width: 150px;
+    height: 50px;
+    
+  }
+  
+  
+  
+  .signup-section {
+    padding: 0.3rem 0rem;
+  }
+
+
+ /* faq css */  
+  h2 {
+    margin: 20px auto 80px;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 45px 70px 45px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
+  }
+  
+  details + details {
+    margin-top: 20px;
+  }
+  
+  details[open] {
+    min-height: 50px;
+    background-color: #f6f7f8;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+  }
+  
+  details p {
+    color: #96999d;
+    font-weight: 300;
+  }
+  
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  summary:focus {
+    outline: none;
+    
+  }
+  
+  summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 5px rebeccapurple;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none
+  }
+  
+  .control-icon {
+    fill: rebeccapurple;
+    transition: .3s ease;
+    pointer-events: none;
+  }
+  
+  .control-icon-close {
+    display: none;
+  }
+  
+  details[open] .control-icon-close {
+    display: initial;
+    transition: .3s ease;
+  }
+  
+  details[open] .control-icon-expand {
+    display: none;
+  }
+  
+/* mobile */
+@media(max-width: 400px) {
+  
+  .section-menu-telpon{
+    display: contents;
+  }
+  .section-menu-telpon h3{
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .section-menu-image img{
+    max-width: 348px;
+    max-height: 300px ;
+  }
+  .form-title h4{
+    font-size: 20px;
+  }
+
+  .modal-login-register{
+    max-width: 200px;
+    max-height: 200px;
+    top: 20%;
+    right: 10%;
+    left: 10%;
+  }
+  
+  .modal-rapat{
+    max-width: 300px;
+    max-height: 300px;
+    
+  }
+  
+  .modal-link-rapat{
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+}
+
+@media(min-width: 600px) {
+  .section-menu-telpon{
+    display: flex;
+    margin-top: -2px;
+  }
+
+  .section-menu-telpon h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .section-menu-telpon p{
+    font-size: 14px;
+  }
+  
+  .section-menu-image img{
+    width: 308px;
+    height: 200spx;
+    margin-left: -1px;
+    margin-top: -1px;
+
+  }
+  .teks-slide p{
+    font-size: 18px;
+  }
+}
+
+/* @media(min-width: 700px) {
+  .section-menu-telpon{
+    display: contents;
+    margin-top: -2px;
+  }
+
+  .section-menu-telpon h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .section-menu-telpon p{
+    font-size: 14px;
+  }
+  
+  .section-menu-image img{
+    width: 308px;
+    height: 200spx;
+    margin-left: -1px;
+    margin-top: -1px;
+
+  }
+  .teks-slide p{
+    font-size: 18px;
+  }
+} */
+
+@media(max-width: 800px){
+  .section-menu-telpon{
+    display: contents;
+    margin-top: -2px;
+  }
+
+  .section-menu-telpon h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .section-menu-telpon p{
+    font-size: 14px;
+  }
+  
+  .section-menu-image img{
+    width: 388px;
+    height: 200spx;
+    margin-left: -1px;
+    margin-top: -1px;
+
+  }
+  .teks-slide p{
+    font-size: 24px;
+  }
+
+  .modal-login-register{
+    max-width: 400px;
+    max-height: 400px;
+    top: 10%;
+    left: 8%;
+  }
+
+  .modal-rapat{
+    max-width: 300px;
+    max-height: 300px;
+    top: 14%;
+    left: 18%;
+  }
+
+  .modal-link-rapat{
+    max-width: 400px;
+    max-height: 400px;
+    top: 14%;
+    left: 8%;
+  }
+  
+}   

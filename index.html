@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telpon.us - Video Conference Gratis</title>
+    <link rel="stylesheet" href="script/Agile-Carousel-master/agile_carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="script/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-telpon">
+        <div class="container">
+            <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+                <a href="" class="navbar-brand">
+                    <img src="images/logo-telpon.png" alt="Logo-telpon-us"/>
+                </a>
+        
+                <button class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navb"
+                >
+        
+                <span class="navbar-toggler-icon"></span>
+        
+                </button>
+        
+                <div class="collapse navbar-collapse navbar-menu" id="navb">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#masukkanModal">Masukkan</a>
+                        </li>
+                        
+                        
+                    </ul>
+        
+                    <!-- mobile button -->
+                    <form class="form-inline d-sm-block d-md-none" >
+                        <button class="btn btn-daftar my-2 my-sm-0 px-4" type="button" data-toggle="modal" data-target="#loginModal">
+                            Daftar
+                        </button>
+                    </form>
+    
+                    <!-- dekstop button -->
+                    <form action="" class="form-inline my-2 my-lg-0 d-none d-md-block" method="POST">
+                        <button class="btn btn-daftar btn-navbar-right my-2 my-sm-0 px-4" type="button" data-toggle="modal" data-target="#loginModal">
+                            Daftar
+                        </button>
+                    </form>
+        
+                </div>
+            </nav>             
+            
+            <!-- navbar -->
+        </div>
+    </div>
+
+    <!-- modal pop up -->
+    <!-- modal pop up  login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-login-register" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <div class="form-title text-center login-register">
+                <h4>Login</h4>
+              </div>
+              <div class="d-flex flex-column">
+                <form>
+                  <div class="form-group">
+                      <label for="email1">Email</label>
+                    <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                  </div>
+                  <div class="form-group">
+                      <label for="password1" >Password</label>
+                    <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                  </div>
+                  <button type="submit" class="btn btn-info btn-block btn-round text-center">Login</button>
+                </form>
+                
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section" data-toggle="tooltip" data-placement="top">Anda belum daftar ? <a href="#a" class="text-info" data-toggle="modal" data-target="#registerModal"> Sign Up</a>.</div>
+                  </div>    
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    
+    
+    </div>
+
+    <!-- modal pop up register-->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-login-register" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center login-register">
+                <h4>Register</h4>
+              </div>
+              <div class="d-flex flex-column">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input class="form-control" id="name" placeholder="Your full name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email1">Email</label>
+                        <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" >Password</label>
+                        <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" >Rectype Password</label>
+                        <input type="password" class="form-control" id="password1" placeholder="Re-ctype password...">
+                    </div>
+                  <button type="submit" class="btn btn-info btn-block btn-round text-center">Register</button>
+                </form>
+                
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section" data-toggle="tooltip" data-placement="top">Anda sudah daftar ? <a href="#a" class="text-info" data-toggle="modal" data-target="#loginModal"> Login</a>.</div>
+                  </div>    
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    
+    
+    </div>
+
+     <!-- modal pop up masukkan-->
+    <div class="modal fade" id="masukkanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-login-register" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="form-title">
+                    <h4 class="text-center">Masukkan</h4>
+                    <p><p>Masukkan anda sangat berarti bagi peningkatan layanan kami</p></p>      
+                </div>
+                
+                <div class="d-flex flex-column">
+                  <form>
+                      
+                      <div class="form-group">
+                          <label for="email1">Email</label>
+                          <input type="email" class="form-control" id="email1">
+                      </div>
+            
+                      <div class="form-group">
+                          <label for="description">Masukaan anda</label><br/>
+                          <textarea name="description" id="" class="form-control" cols="36" rows="6"></textarea>
+                      </div>
+            
+                      <div class="form-group">
+                          <label for="file-masukkan">File Masukkan (opsional) </label>
+                          <input type="file" class="form-control" id="file-masukkan">
+                      </div>
+                      
+                    <button type="submit" class="btn btn-info btn-block btn-round text-center">Kirim</button>
+                  </form>
+                  
+            
+                      
+                </div>
+            </div>
+          </div>
+            
+        </div>
+    
+    
+    </div>  
+    
+    <!-- modal pop up buat rapat-->
+
+    <div class="modal fade" id="rapatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered modal-rapat" role="document">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+              <div class="form-title">
+                <h4 class="text-center">Pilih rapat</h4>
+                
+              </div>
+              <div class="flex-column">
+                <div class="buat-rapat mt-3 mb-2">
+                    <a href="#" data-toggle="modal" data-target="#linkrapatModal">Buat rapat untuk nanti</a>
+                </div>
+                <div class="join-rapat">
+                    <a href="#">Mulai rapat sekarang</a>
+                </div>
+                
+
+                    
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    
+    
+    </div>
+
+    <!-- modal pop up link untuk nanti -->
+    <div class="modal fade" id="linkrapatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-link-rapat" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="section-left">
+                Salin link dibawah ini
+              </div>
+              <div class="section-right">
+                    <button type="button" class="close" data-dismiss="modal" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="form-copy">
+                <p>Salin link berikut ini lalu kirimkan kepada orang yang ingin anda ajak bergabung. Pastikan anda menyimpannya agar anda dapat juga menggunakannya</p>
+              </div>
+              <div class="d-flex">
+    
+                <!-- Target -->
+                <input class="form-control" id="foo" value="telpon.us/jkgh-gfjh-qwer">
+            
+
+                <!-- Trigger -->
+                <button class="btn btn-image-copy" data-clipboard-target="#foo">
+                    <img class="image-copy" src="images/copy.png" alt="Copy to clipboard">
+                </button>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    
+    
+    </div>
+
+    <!-- main menu -->
+    <main>
+        <div class="container">
+            <div class="section-menu-telpon " id="menuTelpon">
+                <div class="col-sm-6 col-md-6 col-lg-6 mt-5 ">
+                    <h3>Gunakan Video<br/>
+                        Conference Premium<br/>
+                        Karya Anak Bangsa Gratis<br/>
+                        Untuk Semua Orang
+                    </h3>
+                    <p>Kami merancang layanan kami agar <br/>digunakan dengan aman. dan dapat digunakan <br/>oleh semua orang secara gratis</p>
+                    <!-- mobile button -->
+                    <form class="form-inline d-sm-block d-md-none">
+                        <a href="" class="btn btn-mulai-rapat my-2 my-sm-0 px-4 " data-toggle="modal" data-target="#rapatModal">
+                            + Buat Rapat
+                        </a>
+                    </form>
+
+                    <!-- dekstop button -->
+                    <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <a href="" class="btn btn-mulai-rapat btn-navbar-right my-2 my-sm-0 px-4" data-toggle="modal" data-target="#rapatModal">
+                            + Buat Rapat
+                        </a>
+
+                    </form>
+                                            
+                </div>
+
+                <div class="section-menu-image col-sm-12 col-md-6 col-lg-6">
+                    
+                        <div id="carousel-about" class="carousel slide carousel-fade" >
+                            <div class="carousel-inner">
+                                
+                                
+                                <div class="gambar-menu">
+                                    <img class="slideshow" src="images/illustrasi.png" alt="1"/>
+                            
+                                </div>
+                                <div class="gambar-menu">
+                                    <img class="slideshow" src="images/illustrasi2.png" alt="1"/>
+                            
+                                </div>
+
+                                <div class="gambar-menu">
+                                    <img class="slideshow" src="images/illustrasi3.png" alt="1"/>
+                            
+                                </div>
+
+                                <div class="gambar-menu">
+                                    <img class="slideshow" src="images/illustrasi4.png" alt="1"/>
+                            
+                                </div>
+                                
+                            
+                                
+                                                
+                            </div>
+
+                            <div class="carousel-inner">
+                                
+                                
+                                <div class="teks-slide text-center ">
+                                    <p class="teksslideshow">Tersedia untuk android dan ios</p>
+                            
+                                <div class="teks-slide text-center">
+                                    <p class="teksslideshow">Mudah terhubung dengan yang lain</p>
+                                </div>
+                                <div class="teks-slide text-center">
+                                    <p class="teksslideshow">Tanpa adanya batasan waktu bersama</p>
+                                </div>
+                                <div class="teks-slide text-center">
+                                    <p class="teksslideshow">Cepat dan mudah digunakan</p>
+                                </div>
+                                                
+                            </div>
+
+                        
+    
+
+                        </div>
+
+                        
+                                            
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="section-footer mt-5">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <h5 class="text-footer-heading">
+                                Telpon Address
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li> <img src="images/maps-and-flags 1.png" alt="" class="gambar-telpon-address" > &nbsp; <span class="telpon-address">Purworejo,  Indonesia</span> </li>
+                                <li> <img src="images/email 1.png" alt="" class="gambar-telpon-address"> &nbsp; <span class="telpon-address">Info@telpon.us</span> </li>
+                                <li> <img src="images/telephone 1.png" alt="" class="gambar-telpon-address"> &nbsp; <span class="telpon-address">+62 889891290123</span> </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="col-12 col-lg-4">
+                            <h5 class="text-footer-heading">
+                                Navigasi
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="navigasi">Home</a></li>
+                                <li><a href="#" class="navigasi">About</a></li>
+                                <li><a href="#" class="navigasi">Services</a></li>
+                                <li><a href="#" class="navigasi">Blog</a></li>
+                        
+                            </ul>
+                        </div>  
+
+                        <div class="col-12 col-lg-4">
+                            <h5 class="text-footer-heading">
+                                Product Help                          
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="product-help">FAQ</a></li>
+                                <li><a href="#" class="product-help">Privacy Policy</a></li>
+                                
+                                <li><a href="#" class="product-help">Support</a></li>
+                                <li><a href="#" class="product-help">Term & Condition</a></li>
+                                <li><a href="#" class="product-help">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-12 col-lg-4">
+                            <h5 class="text-footer-heading">
+                                Sosial Media                          
+                            </h5>
+                            <ul class="list-unstyled d-flex sosmed">
+                                <li>
+                                    <a href="#" class="sosmed">
+                                        <img src="images/facebook 1.png" alt="">
+                                    </a>
+                                </li>
+
+                                
+
+                                <li>
+                                    <a href="#" class="sosmed">
+                                        <img src="images/instagram 1.png" alt="">
+                                    </a>
+                                </li>
+                                
+                                
+
+                                <li>
+                                    <a href="#" class="sosmed">
+                                        <img src="images/twitter 1.png" alt="">
+                                    </a>
+                                </li>
+
+                                
+
+                                <li>
+                                    <a href="#" class="sosmed">
+                                        <img src="images/youtube 1.png" alt="">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+                            <h5 class="text-footer-heading">
+                                Download                          
+                            </h5>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a href="#" class="download">
+                                        <img src="images/googleplay1.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="download">
+                                        <img src="images/apppppstore.png" alt="">
+                                    </a>
+                                </li>
+                                
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row justify-content-center made-with border-top">
+            <div class="col-auto footer-bawah">
+                Made With Ruang Halal Indonesia
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="script/jquery/jquery-3.5.1.min.js"></script>
+    <script src="script/Agile-Carousel-master/agileCarousel.jquery.json"></script>
+    <script src="script/slider1.js"></script>
+    <script src="https://kit.fontawesome.com/690cd723d8.js" crossorigin="anonymous"></script>
+    <script src="script/bootstrap/js/bootstrap.js"></script>
+    <script src="script/clipboard.js-master/dist/clipboard.min.js"></script>
+    <script>
+        w3.slideshow(".slideshow", 3000);
+    </script>
+
+    <script>
+        w3.slideshow(".teksslideshow", 3000);
+    </script>
+
+    <script>
+        new ClipboardJS('.btn');
+    </script>
+    
+
+    
+</body>
+</html>
